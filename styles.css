@@ -727,3 +727,180 @@ body {
         font-size: 4em;
     }
 }
+
+/* Mobile-specific enhancements */
+@media (max-width: 480px) {
+    .header {
+        padding: 15px 10px;
+    }
+    
+    .glitch {
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        font-size: 0.6em;
+        letter-spacing: 1px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .video-container {
+        width: 100%;
+        aspect-ratio: 3/4;
+    }
+    
+    .data-overlay {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .data-header {
+        font-size: 1.2em;
+    }
+    
+    .data-subheader {
+        font-size: 0.8em;
+    }
+    
+    .data-form {
+        gap: 15px;
+    }
+    
+    /* Prevent iOS zoom on input focus - must be 16px or larger */
+    .form-group input {
+        font-size: 16px;
+        padding: 14px 12px;
+    }
+    
+    .words-input {
+        gap: 8px;
+    }
+    
+    .submit-button {
+        padding: 14px 30px;
+        font-size: 1em;
+        width: 100%;
+    }
+    
+    .rate-button {
+        padding: 18px 50px;
+        font-size: 1.1em;
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .processing-text {
+        font-size: 1.1em;
+    }
+    
+    .processing-bar {
+        height: 25px;
+    }
+    
+    .processing-stats {
+        font-size: 0.8em;
+    }
+    
+    .results-header {
+        font-size: 1.2em;
+    }
+    
+    .score-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .score-label {
+        font-size: 0.9em;
+    }
+    
+    .score-value {
+        font-size: 3.5em;
+    }
+    
+    .score-max {
+        font-size: 1.5em;
+    }
+    
+    .comment {
+        font-size: 1em;
+        padding: 0 10px;
+    }
+    
+    .warning,
+    .data-warning {
+        font-size: 0.7em;
+    }
+    
+    .countdown {
+        font-size: 3.5em;
+    }
+    
+    .refresh-text {
+        font-size: 1.1em;
+    }
+    
+    .refresh-subtext {
+        font-size: 0.9em;
+    }
+    
+    .footer {
+        padding: 15px 10px;
+    }
+    
+    .footer-text {
+        font-size: 0.7em;
+    }
+    
+    .footer-warning {
+        font-size: 0.65em;
+    }
+    
+    .notification {
+        font-size: 0.8em;
+        padding: 8px 15px;
+    }
+}
+
+/* Touch-friendly enhancements */
+@media (hover: none) and (pointer: coarse) {
+    .rate-button,
+    .submit-button {
+        /* Larger touch targets for mobile */
+        min-height: 50px;
+    }
+    
+    .rate-button:active,
+    .submit-button:active {
+        transform: scale(0.98);
+        opacity: 0.9;
+    }
+    
+    .form-group input:focus {
+        /* More visible focus state on touch devices */
+        border-width: 3px;
+    }
+}
+
+/* Safe area insets for notched phones */
+@supports (padding: max(0px)) {
+    .header {
+        padding-top: max(20px, env(safe-area-inset-top));
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+    
+    .footer {
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+    
+    .main-content {
+        padding-left: max(20px, env(safe-area-inset-left));
+        padding-right: max(20px, env(safe-area-inset-right));
+    }
+}
