@@ -222,12 +222,8 @@ async function handleDataSubmit(e) {
     currentState = 'RESULTS';
     addNotification('ANALYSIS COMPLETE');
     showResults(score, comment);
-
-    // Wait 3 seconds before refresh countdown
-    await sleep(3000);
-
-    // Start refresh countdown
-    startRefreshCountdown();
+    
+    // Results stay on screen permanently - no auto-reset
 }
 
 // Animate processing statistics
