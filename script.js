@@ -8,54 +8,64 @@ let userData = null;
 // Snarky comments based on score ranges
 const comments = {
     1: [
-        "ERROR: ATTRACTIVENESS NOT FOUND",
-        "SYSTEM MALFUNCTION: NEGATIVE VALUES DETECTED",
-        "CRITICAL: FACIAL RECOGNITION FAILURE"
+        "Unfortunately, you're not attractive.",
+        "The algorithm has spoken. It's not good news.",
+        "Some faces are unforgettable. Yours isn't one of them.",
+        "Yikes. The data doesn't lie."
     ],
     2: [
-        "You look weird but I guess there is some potential",
-        "ANALYSIS: BARELY REGISTERS ON HUMAN SCALE",
-        "WARNING: AESTHETIC ANOMALY DETECTED"
+        "You look weird but I guess there's some potential.",
+        "Not everyone can be beautiful. That's okay.",
+        "The system struggled to find your best angle.",
+        "There's a lid for every pot... yours is just hard to find."
     ],
     3: [
-        "MARGINAL: WITHIN ACCEPTABLE PARAMETERS... BARELY",
-        "SYSTEM SUGGESTS: TRY AGAIN IN BETTER LIGHTING",
-        "CONCLUSION: NEEDS SIGNIFICANT OPTIMIZATION"
+        "Below average, but you probably already knew that.",
+        "There's room for improvement. A lot of room.",
+        "The algorithm is being generous here.",
+        "You're not ugly, just... forgettable."
     ],
     4: [
-        "MEDIOCRE: MEETS MINIMUM REQUIREMENTS",
-        "ANALYSIS: UNREMARKABLE BUT FUNCTIONAL",
-        "STATUS: AVERAGE HUMAN SPECIMEN"
+        "Mediocre. You meet the minimum requirements.",
+        "Unremarkable but functional.",
+        "You blend into a crowd effortlessly.",
+        "Average in the most average way possible."
     ],
     5: [
-        "NEUTRAL: NEITHER IMPRESSIVE NOR DISAPPOINTING",
-        "VERDICT: PERFECTLY FORGETTABLE",
-        "RATING: STATISTICALLY AVERAGE"
+        "Neither impressive nor disappointing.",
+        "Perfectly forgettable.",
+        "Statistically average. Congratulations?",
+        "You're the human equivalent of room temperature water."
     ],
     6: [
-        "ACCEPTABLE: SLIGHTLY ABOVE BASELINE",
-        "ANALYSIS: SHOWS PROMISE BUT LACKS EXECUTION",
-        "STATUS: MODERATELY TOLERABLE"
+        "Slightly above baseline. Not bad.",
+        "Shows promise but lacks that special something.",
+        "Moderately attractive. Could be worse.",
+        "You clean up okay."
     ],
     7: [
-        "IMPRESSIVE: EXCEEDS STANDARD PARAMETERS",
-        "VERDICT: AESTHETICALLY PLEASING (FOR A HUMAN)",
-        "RATING: ABOVE AVERAGE SPECIMEN DETECTED"
+        "Exceeds standard parameters. Impressive.",
+        "Aesthetically pleasing. Well done.",
+        "Above average specimen detected.",
+        "You've got something going on. Keep it up."
     ],
     8: [
-        "EXCELLENT: HIGH-QUALITY FACIAL STRUCTURE",
-        "ANALYSIS: SUPERIOR GENETIC CONFIGURATION",
-        "STATUS: REMARKABLY PHOTOGENIC"
+        "High-quality facial structure detected.",
+        "Superior genetic configuration confirmed.",
+        "Remarkably photogenic.",
+        "The algorithm approves. Strongly."
     ],
     9: [
-        "OUTSTANDING: NEAR-PERFECT SYMMETRY DETECTED",
-        "VERDICT: EXCEPTIONAL HUMAN SPECIMEN",
-        "RATING: APPROACHING THEORETICAL MAXIMUM"
+        "Near-perfect symmetry detected.",
+        "Exceptional. The data is very favorable.",
+        "Approaching theoretical maximum attractiveness.",
+        "You're in the top tier. Own it."
     ],
     10: [
-        "PERFECT: SYSTEM OVERLOAD - TOO ATTRACTIVE",
-        "ERROR: BEAUTY EXCEEDS COMPUTATIONAL LIMITS",
-        "CRITICAL: ATTRACTIVENESS BREAKS THE ALGORITHM"
+        "System overload - too attractive.",
+        "Beauty exceeds computational limits.",
+        "Attractiveness breaks the algorithm.",
+        "Perfect score. The system has never seen anything like you."
     ]
 };
 
